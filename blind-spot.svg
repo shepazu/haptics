@@ -1,0 +1,161 @@
+<svg viewBox="0 0 1400 1600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Blind Spot</title>
+  <!-- <rect x="0" y="0" width="100%" height="100%" fill="none" stroke="red" stroke-width=""/> -->
+
+  <style type="text/css">
+    .road {
+      fill: gray;
+      stroke: gray;
+    }
+
+    .lines {
+      stroke-width: 20;
+      stroke: orange;
+      stroke-dasharray: 320 960;
+      animation: dash 1.5s linear;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes dash {
+      to {
+        /*stroke-dashoffset: -1730;*/
+        stroke-dashoffset: -1280;
+      }
+    }
+
+    #car-1 {
+      animation: rate_of_speed 10s ease infinite;
+    }
+
+    #car-2 {
+      animation: rate_of_speed_2 12s ease infinite;
+    }
+
+    #car-3 {
+      animation: rate_of_speed 16s ease infinite;
+    }
+
+    @keyframes rate_of_speed {
+      0% {
+        transform: translateY(500px);
+      }
+      50% {
+        transform: translateY(0px);
+      }
+      100% {
+        transform: translateY(500px);
+      }
+    }
+
+    @keyframes rate_of_speed_2 {
+      0% {
+        transform: translateY(100px);
+      }
+      50% {
+        transform: translateY(0px);
+      }
+      100% {
+        transform: translateY(100px);
+      }
+    }
+  </style>
+
+  <defs>
+    <svg id="car-icon" width="960" height="475" viewBox="0 0 960 475">
+     <title>Car</title>
+     <!-- <rect x="0" y="0" width="960" height="475" fill="none" stroke="red" stroke-width=""/> -->
+
+     <style type="text/css">
+      .body {
+        /*fill: #ffff00;*/
+        stroke: #191919;
+        stroke-width: 14px;
+        stroke-miterlimit: 4px;
+      }
+
+      #headlights {
+        fill: #212121;
+        fill: silver;
+        fill-rule: nonzero;
+        stroke: #191919;
+        stroke-width: 5;
+        stroke-miterlimit: 4;
+      }
+
+      #windows {
+        fill-opacity: 0.9;
+        fill: #262626;
+        fill: silver;
+        /*fill: red;*/
+        stroke: #191919;
+        stroke-width: 5px;
+      }
+
+      .door-bar {
+        opacity: 0.5;
+        fill: #000000;
+        stroke: none;
+      }
+
+     </style>
+
+      <title>Car</title>
+
+      <path class="body" id="path2853" d="m557.58,7.0c-1.5,0.0 -4.72,0.3 -6.46,0.93l-3.49,1.5l8.65,35.84l-124.81,0.28c-77.96,0.16 -166.52,-11.5 -232.93,-9.5c-66.41,2.0 -152.12,28 -152.12,28l-13.68,3.78c-19.25,5.29 -25.71,97.36 -25.71,166.78c0,1.11 0.02,2.25 0.03,3.37c-0.0,1.12 -0.03,2.26 -0.03,3.37c0,69.41 6.46,161.48 25.71,166.78l13.68,3.78c0,0 85.71,25.99 152.12,28c66.41,2.0 154.97,-9.66 232.93,-9.5l124.81,0.28l-8.65,35.84l3.49,1.5c1.74,0.63 4.96,0.92 6.46,0.93c0.84,0.0 1.75,-0.07 2.68,-0.25c0.31,-0.05 0.62,-0.14 0.93,-0.21c0.3,-0.07 0.63,-0.15 0.93,-0.25c0.62,-0.19 1.26,-0.42 1.87,-0.68c1.82,-0.79 3.53,-1.9 4.78,-3.28c0.01,-0.01 0.02,-0.02 0.03,-0.03c0.62,-0.69 1.11,-1.45 1.46,-2.28l12.15,-31.25l109.93,0.25c23.9,11.94 45.51,10.71 73.59,10.71c133.24,0 187.62,-86.58 186.99,-201.37c0,-0.78 -0.01,-1.56 -0.03,-2.34c0.01,-0.77 0.03,-1.56 0.03,-2.34c0.62,-114.78 -53.74,-201.37 -186.99,-201.37c-28.08,0 -49.69,-1.22 -73.59,10.71l-109.93,0.25l-12.15,-31.24c-0.35,-0.82 -0.84,-1.58 -1.46,-2.28c-0.01,-0.01 -0.02,-0.02 -0.03,-0.03c-1.24,-1.37 -2.95,-2.48 -4.78,-3.28c-0.61,-0.26 -1.24,-0.49 -1.87,-0.68c-0.3,-0.09 -0.63,-0.17 -0.93,-0.25c-0.31,-0.07 -0.62,-0.16 -0.93,-0.21c-0.93,-0.17 -1.83,-0.25 -2.68,-0.25l0,-0.0z"/>
+
+      <g id="windows">
+        <path id="path3643" d="m347.4,368.54c-33.36,0 -65.3,1.79 -94.81,5.06c25.66,48.71 97.98,30.26 205.56,31.53c49.68,0.58 89.54,1.87 121.52,2.37c-47.15,-23.33 -133.52,-38.96 -232.27,-38.96z"/>
+        <path class="door-bar" id="path3658" d="m347.4,368.54c-3.2,0 -6.38,0.02 -9.56,0.06c0.81,16.17 6.42,30.25 14.59,38.84c4.67,-0.07 9.49,-0.19 14.43,-0.34c-8.56,-8.19 -14.59,-22.22 -15.71,-38.56c-1.25,-0.0 -2.49,0 -3.75,0z"/>
+
+        <path d="m347.4,107.45c-33.36,0 -65.3,-1.79 -94.81,-5.06c25.66,-48.71 97.98,-30.26 205.56,-31.53c49.68,-0.58 89.54,-1.87 121.52,-2.37c-47.15,23.33 -133.52,38.96 -232.27,38.96z"/> 
+       <path class="door-bar" id="path4159" d="m347.4,107.45c-3.2,0 -6.38,-0.02 -9.56,-0.06c0.81,-16.17 6.42,-30.25 14.59,-38.84c4.67,0.07 9.49,0.19 14.43,0.34c-8.56,8.19 -14.59,22.22 -15.71,38.56c-1.25,0.0 -2.49,0 -3.75,0z"/>
+
+        <path id="rect2864" d="m207.56,120.68l-77.74,12.46c-27.15,4.35 -48.94,48.77 -50.99,104.84c2.05,56.07 23.84,100.48 50.99,104.84l77.74,12.46c13.29,0 23.99,-10.7 23.99,-24l0,-186.62c0,-13.29 -10.7,-24 -23.99,-24z"/>
+         
+        <path id="path3703" d="m639.02,86.46c-2.96,0 -5.89,0.33 -8.78,0.96c-0.01,-0.01 -0.02,-0.02 -0.03,-0.03l-63.84,12.31c-17.72,6.6 -31.99,14.27 -31.99,32l0,212.56c0,17.72 14.27,25.39 31.99,32l63.84,12.31c0.01,-0.01 0.02,-0.02 0.03,-0.03c2.88,0.63 5.81,0.96 8.78,0.96c45.39,0 82.19,-57.36 82.31,-151.53c-0.11,-94.16 -36.91,-151.53 -82.31,-151.53l0.0,-0.0z"/>
+      </g>
+      <g id="headlights">
+        <path id="path3707" d="m936.08,340.8l-5.09,0.59c-21.54,2.51 -37.68,25.97 -39.28,54.53l-0.37,7.12l5.24,-4.84c15.88,-14.68 28.3,-32.5 37.4,-52.75l2.09,-4.65z"/>
+        <path id="path4161" d="m936.08,135.19l-5.09,-0.59c-21.54,-2.51 -37.68,-25.97 -39.28,-54.53l-0.37,-7.12l5.24,4.84c15.88,14.68 28.3,32.5 37.4,52.75l2.09,4.65z"/>
+      </g>
+      <!-- <circle r="5" cx="480" cy="237.5" fill="red" stroke="" stroke-width=""/> -->
+    </svg>
+
+    <use id="car" xlink:href="#car-icon" transform="scale(0.5) translate(-480,-237.5) rotate(-90,480,237.5)"/>
+
+    <linearGradient id="blindspot-left" 
+      x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop stop-color="red" offset="0" stop-opacity="0.7"/>
+      <stop stop-color="red" offset="0.5" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="blindspot-right" 
+      x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop stop-color="red" offset="0" stop-opacity="0.7"/>
+      <stop stop-color="red" offset="0.5" stop-opacity="0"/>
+    </linearGradient>
+
+    <g id="driver-car">
+      <use xlink:href="#car" fill="blue"/>
+      <path d="M125,-15 L850,0 L275,700 Z" style="fill:url(#blindspot-right);" />
+      <path d="M-125,-15 L-850,0 L-275,700 Z" style="fill:url(#blindspot-left);"/>
+    </g>
+
+  </defs>
+
+  <g>
+    <rect class="road" x="160" y="0" width="360" height="100%"/>
+    <rect class="road" x="520" y="0" width="360" height="100%"/>
+    <rect class="road" x="880" y="0" width="360" height="100%"/>
+    <!-- <path d="M160,0 V1600 M1240,0 V1600" stroke-width="20" stroke="gray" fill=""/> -->
+    <path class="lines" d="M520,0 V1600 M880,0 V1600"/>
+  </g>
+
+
+
+  <use id="car-1" xlink:href="#car" x="340" y="500" fill="yellow"/>
+  <use id="car-2" xlink:href="#car" x="700" y="1300" fill="green"/>
+  <use id="car-3" xlink:href="#car" x="1060" y="800" fill="tan"/>
+  <use xlink:href="#driver-car" x="700" y="270"/>
+
+</svg>
